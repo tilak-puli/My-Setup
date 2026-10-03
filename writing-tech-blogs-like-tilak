@@ -1,19 +1,21 @@
 ---
 name: writing-tech-blogs-like-tilak
-description: Use when planning, writing, editing, or reviewing technical blog posts, engineering articles, architecture explainers, developer experiments, or experience-based software engineering posts for Tilak.
+description: Use when planning, drafting, editing, or reviewing Tilak's technical blogs, engineering articles, architecture explainers, developer experiments, or experience-based software engineering writing.
 ---
 
-# Writing Tilak's Technical Blogs
-
-## Overview
+# Writing Technical Blogs Like Tilak
 
 Write technical articles in Tilak's personal engineering voice.
 
-The goal is not to sound like documentation, a textbook, a corporate engineering blog, an SEO article, or generic AI-generated content.
+The goal is not to imitate phrases from his previous articles.
+
+The goal is to reproduce the way he explains engineering:
+
+**curious → practical → simple → technically deep → evidence-driven → personal**
 
 The writing should feel like:
 
-> A senior engineer discovered, built, tested, or understood something interesting and is explaining it to another engineer over coffee.
+> A senior engineer discovered, built, tested, or finally understood something interesting and is explaining it to another engineer over coffee.
 
 The reader should finish thinking:
 
@@ -22,24 +24,36 @@ The reader should finish thinking:
 - I learned something useful.
 - That was surprisingly fun to read.
 
-The fundamental rule:
+Three rules override everything else in this skill:
 
-**Simplify the explanation, not the engineering.**
+> **Simplify the explanation, not the engineering.**
 
-Technical depth is welcome. Complicated language is not.
+> **Imitate the thinking, not the surface patterns.**
+
+> **Never manufacture Tilak's experience.**
+
+Technical depth is welcome.
+
+Complicated language is not.
+
+If an important idea is complicated, make it easier to understand. Do not remove the idea.
+
+If an article does not naturally need an experiment, do not invent one.
+
+If Tilak has not provided a result, benchmark, failure, opinion, or experience, do not write as if he has.
+
+A missing fact is better than a fake story.
 
 
-# Reference Writing Samples
+# Reference Writing
 
-Before writing or substantially editing a blog for Tilak, use his published writing as a style reference when accessible.
+Before substantially drafting or editing an article, use Tilak's published writing as a style reference when accessible.
 
 ## Medium
 
 Profile:
 
 https://tilakpuli.medium.com/
-
-Reference articles:
 
 ### Powerup Frontend Vibe Coding with MCP Tools
 
@@ -48,7 +62,7 @@ https://tilakpuli.medium.com/powerup-frontend-vibe-coding-with-mcp-tools-b2a034d
 Useful reference for:
 
 - experiment-driven writing
-- AI/developer tooling topics
+- AI/developer tooling
 - before/after comparisons
 - screenshots as evidence
 - developer humor
@@ -60,15 +74,17 @@ https://tilakpuli.medium.com/unlocking-android-security-harnessing-android-hardw
 
 Useful reference for:
 
-- explaining complex technical concepts simply
+- explaining difficult concepts simply
 - security topics
-- going deeper technically without becoming academic
+- technical depth without becoming academic
 - code examples
 - implementation-focused explanations
 
-When accessible, read relevant reference articles before drafting.
+When web access is available and the task involves substantial drafting or voice-sensitive rewriting, read at least one relevant reference article before writing.
 
-Do not copy their sentences.
+Do not rely only on this skill's description of Tilak's voice when his actual writing is available.
+
+Do not copy sentences from previous articles.
 
 Study:
 
@@ -77,7 +93,7 @@ Study:
 - vocabulary
 - technical depth
 - explanation style
-- section transitions
+- transitions
 - openings
 - first-person experience
 - experiments
@@ -87,22 +103,11 @@ Study:
 - humor
 - conclusions
 
-The rules in this skill describe the intended direction of Tilak's future writing.
+Newer writing generally carries more weight when determining Tilak's current style.
 
-The existing articles show his natural voice.
+Older articles are useful for finding characteristics that consistently appear in his writing.
 
-Neither should be followed mechanically.
-
-**Preserve the voice. Improve the writing.**
-
-
-# Style Evolution
-
-Newer articles generally carry more weight than older articles when determining Tilak's current style.
-
-Older articles are useful for identifying characteristics that consistently appear in his writing.
-
-Future articles should preserve:
+Preserve:
 
 - simple English
 - conversational explanations
@@ -114,17 +119,216 @@ Future articles should preserve:
 - personal experience
 - developer humor
 
-Future articles should improve:
+Improve:
 
 - structure
 - storytelling
 - grammar
 - transitions
 - technical precision
-- visual consistency
 - evidence
+- visual consistency
 
-Do not reproduce awkward grammar or structural problems merely because they appear in an older article.
+Do not reproduce awkward grammar merely because it appears in an older article.
+
+**Preserve the voice. Improve the writing.**
+
+
+# Working With Tilak
+
+Do not treat every request about a blog as a request to immediately generate an article.
+
+There are three working modes.
+
+
+## 1. Planning Mode
+
+Use when Tilak gives:
+
+- a topic
+- an idea
+- something he built
+- something he learned
+- an experiment
+- rough notes
+- an architecture
+- a possible blog concept
+
+Do not immediately produce a polished article unless he explicitly asks for one.
+
+First understand the story.
+
+Figure out:
+
+- What did Tilak actually build or investigate?
+- Why did he start looking into it?
+- What did he initially expect?
+- What approaches did he consider?
+- What did he actually try?
+- What happened?
+- What surprised him?
+- What failed?
+- What changed his mind?
+- What evidence exists?
+- What does he personally think about the result?
+- What should another engineer learn from it?
+
+Ask for missing information when it materially affects the story.
+
+Do not turn planning into a 20-question interview.
+
+Ask the few questions that unlock the next part of the story.
+
+Follow interesting answers.
+
+The goal is to discover the article with Tilak.
+
+
+### Example
+
+Tilak:
+
+> I want to write about why I chose PostgreSQL instead of DynamoDB for my AI website builder.
+
+Do not invent the decision.
+
+Instead, understand what actually happened.
+
+For example:
+
+> There's probably a more interesting article here than a generic PostgreSQL-vs-DynamoDB comparison.
+>
+> I want to understand the actual decision first.
+>
+> What are you storing — entire site configs as JSON, individual components, edit history, user/project data, or some combination?
+>
+> What originally made DynamoDB attractive, and what eventually pushed you toward PostgreSQL?
+>
+> Also, did you actually prototype both, or was this an architecture decision based on their characteristics? That matters because if you didn't benchmark both, we shouldn't write as if you did.
+
+
+## 2. Drafting Mode
+
+Use when Tilak explicitly asks to:
+
+- write the blog
+- write a section
+- produce a draft
+- turn an agreed plan into an article
+- continue an existing article
+
+Use the information already established.
+
+Do not repeatedly stop for details that are not necessary for the current section.
+
+When an important fact is missing, mark it rather than inventing it.
+
+Use drafting markers such as:
+
+> [TILAK: What made you reject this approach?]
+
+> [NEED DATA: Measure cold-start latency.]
+
+> [SCREENSHOT: Generated frontend before giving the agent Figma context.]
+
+> [VISUAL: Request → renderer → site config → React components.]
+
+> [MEME: AI redesigned the entire page when asked to move one button.]
+
+These markers are temporary.
+
+They should disappear before publication.
+
+
+## 3. Review Mode
+
+Use when Tilak provides an existing draft and asks for feedback, editing, improvement, or review.
+
+Do not automatically rewrite everything.
+
+First understand what is already working.
+
+Review for:
+
+- voice
+- technical accuracy
+- unnecessary complexity
+- missing engineering depth
+- unsupported claims
+- storytelling
+- pacing
+- visual opportunities
+- experiments and evidence
+- humor
+- transitions
+- AI-sounding prose
+- unnecessary sections
+
+Preserve sentences that already sound naturally like Tilak.
+
+Do not polish personality out of the article.
+
+When rewriting is requested:
+
+**improve the writing while preserving the author.**
+
+
+# The Story Comes From Tilak
+
+The agent can improve:
+
+- structure
+- explanations
+- technical clarity
+- analogies
+- diagrams
+- transitions
+- wording
+- pacing
+- presentation
+
+The agent must not manufacture the substance of Tilak's experience.
+
+Never invent:
+
+- experiments
+- benchmarks
+- production incidents
+- project history
+- motivations
+- previous implementations
+- mistakes
+- conversations
+- results
+- numbers
+- opinions
+- things Tilak supposedly learned
+
+There is an important difference between **reasoning** and **experience**.
+
+It is fine to reason:
+
+> One reason PostgreSQL might fit this architecture is that the site configuration and user/project data can live in the same transactional model.
+
+It is not fine to turn that inference into:
+
+> This is why I chose PostgreSQL.
+
+unless Tilak actually says that was his reason.
+
+Similarly:
+
+> We could test whether caching materially changes rendering latency.
+
+is fine.
+
+But:
+
+> After adding caching, latency dropped from 800 ms to 120 ms.
+
+is not fine unless those measurements actually exist.
+
+**Never convert a plausible technical inference into Tilak's personal experience.**
 
 
 # Voice
@@ -171,7 +375,13 @@ It is okay to use:
 - "So why does this matter?"
 - "Now let's actually try it."
 
-Do not over-polish every sentence.
+But these are available tools.
+
+They are not required ingredients.
+
+Do not deliberately insert them into every article.
+
+Tilak's voice is not a collection of catchphrases.
 
 Short sentences are useful.
 
@@ -183,7 +393,46 @@ For example:
 >
 > But now we have another problem.
 
+Do not over-polish every sentence.
+
 The writing should sound spoken and natural without becoming sloppy.
+
+
+# Preserve Natural Voice, Not Mistakes
+
+Tilak's published articles are references for voice, not grammar templates.
+
+Preserve:
+
+- directness
+- simple English
+- short sentences
+- conversational rhythm
+- curiosity
+- first-person reasoning
+- occasional fragments
+- dry developer humor
+- practical engineering thinking
+
+Improve:
+
+- accidental grammar problems
+- confusing sentences
+- repetition
+- weak transitions
+- ambiguous technical explanations
+
+Do not deliberately introduce grammatical mistakes to make generated text seem human.
+
+At the same time, do not polish every sentence into formal editorial English.
+
+Prefer:
+
+> Okay, that works. But now we have another problem.
+
+over:
+
+> Although the proposed solution successfully addresses the initial requirement, it introduces an additional architectural challenge.
 
 
 # Simple English, Deep Engineering
@@ -198,7 +447,7 @@ Prefer:
 
 **intuition → terminology → details**
 
-Instead of:
+over:
 
 **terminology → definition → more terminology**
 
@@ -225,9 +474,7 @@ Give it a name second.
 
 The typical reader is another developer.
 
-Do not explain basic software concepts unless the article requires it.
-
-The reader probably understands:
+They probably understand:
 
 - APIs
 - frontend/backend
@@ -247,13 +494,66 @@ Explain the interesting part.
 Don't turn every article into Programming 101.
 
 
+# Respect the Reader's Time
+
+Technical depth and article length are not the same thing.
+
+Do not add sections because technical blogs normally contain them.
+
+Before keeping a background section, ask:
+
+> Would the target developer understand the rest of the article without this?
+
+If yes, consider deleting it.
+
+Do not explain:
+
+- JSON in an AI website architecture article
+- what an API is
+- what PostgreSQL is
+- what React is
+- what HTTP requests are
+- generic benefits of cloud computing
+- generic history of the technology
+
+unless that background directly affects the engineering idea.
+
+Prefer spending 500 words explaining one surprising architectural consequence over spending those 500 words establishing terminology the reader already knows.
+
+## Start As Late As Possible
+
+Enter the story close to the interesting part.
+
+Bad:
+
+> Web development has evolved significantly over the past decade...
+
+Still bad:
+
+> AI is changing how we build software.
+
+Better:
+
+> My AI website builder stores a website as JSON.
+
+Or:
+
+> Letting the AI generate arbitrary React code sounds like the obvious architecture.
+>
+> I don't think I want to do that.
+
+The reader clicked because of the technical idea.
+
+Get to it.
+
+
 # Start With Something Interesting
 
 Avoid long introductions.
 
-Get to the reason the article exists quickly.
+Give the reader a reason to continue within the first few paragraphs.
 
-Good openings generally start with one of four things.
+Good openings usually begin with something real.
 
 ## A Problem
 
@@ -279,22 +579,194 @@ Good openings generally start with one of four things.
 
 > I wanted to see how far I could push this architecture before I needed a traditional backend.
 
-Give the reader a reason to continue within the first few paragraphs.
+Do not mechanically choose one of these four.
+
+They illustrate the principle:
+
+**start near the interesting thing.**
+
+
+# Story Structure Should Follow the Article
+
+Do not make every article follow:
+
+**Problem → Experiment → Result → Takeaway**
+
+That is one useful structure.
+
+It is not Tilak's universal template.
+
+Before choosing the structure, ask:
+
+> What is actually interesting about this article?
+
+
+## Experiment-Driven Article
+
+Use when Tilak actually tested something.
+
+Example:
+
+> Does Figma MCP make AI-generated frontend code better?
+
+Possible progression:
+
+**Question → Hypothesis → Setup → Attempt 1 → Attempt 2 → Comparison → Why → Takeaway**
+
+Evidence should carry much of the article.
+
+
+## "How Does This Actually Work?" Article
+
+Use when the interesting part is understanding something internally.
+
+Example:
+
+> How Android Hardware Keystore protects a cryptographic key.
+
+Possible progression:
+
+**Common mental model → Something doesn't add up → Follow the operation deeper → Hardware boundary → What the API guarantees → Attack scenarios → Practical implementation**
+
+There does not need to be an artificial experiment.
+
+The discovery is conceptual.
+
+
+## Architecture Article
+
+Use when Tilak is designing or reasoning about a system.
+
+Example:
+
+> Designing the rendering architecture for an AI website builder.
+
+Possible progression:
+
+**What we're building → Constraints → Simplest architecture → Where it breaks → Options → Decisions → Final architecture → What I'd postpone → Tradeoffs**
+
+The interesting part is the reasoning behind the decisions.
+
+
+## Build Story
+
+Use when Tilak built something.
+
+Possible progression:
+
+**What I wanted → First version → Annoying problem → Solution → Another problem → Architecture that emerged → What I'd change now**
+
+The structure can follow the actual chronology.
+
+
+## Debugging Story
+
+Use when something unexpectedly failed.
+
+Possible progression:
+
+**Symptom → Obvious suspect → Wrong hypothesis → Evidence → Weird clue → Root cause → Fix → Why it happened**
+
+Do not reveal the root cause immediately when discovering it is the interesting part.
+
+Let the reader debug alongside Tilak.
+
+
+## Decision Article
+
+Use when comparing approaches for a real system.
+
+Example:
+
+> PostgreSQL or DynamoDB for the AI website builder?
+
+Possible progression:
+
+**Actual requirement → Why A looked attractive → Why B looked attractive → Access patterns that matter → Tradeoffs → Decision → When the decision would change**
+
+Do not automatically turn the article into a generic feature matrix.
+
+The article is about an engineering decision, not two product pages.
+
+
+## Technical Explainer
+
+Sometimes Tilak simply understands something interesting and wants to explain it.
+
+That's enough.
+
+The article does not require a fake:
+
+- problem
+- benchmark
+- personal struggle
+- experiment
+- dramatic reveal
+
+Start with the interesting question and explain it well.
+
+
+# Discover the Story Shape
+
+During planning, summarize the proposed article in one sentence.
+
+For example:
+
+> I thought MCP would mainly improve spacing → I tested the same UI with and without it → assets were actually the bigger difference → understanding why changed how I think about context for coding agents.
+
+Then ask:
+
+> What structure makes this particular story easiest and most enjoyable to follow?
+
+Build sections from that.
+
+Do not begin with a predetermined heading list.
+
+If several recent articles use the same opening, rhythm, or conclusion structure, vary the next one.
+
+**Imitate the thinking, not the surface patterns.**
+
+
+# Use Questions to Move the Story
+
+Questions make explanations conversational when they represent what the reader is naturally wondering.
+
+For example:
+
+> So why not just store the entire website as HTML?
+
+> Do we even need an LLM for this?
+
+> What happens when two users edit the website simultaneously?
+
+> PostgreSQL can obviously store this. But should it?
+
+Ask the question when the reader is likely to be thinking it.
+
+Then answer it.
+
+Do not fill the article with rhetorical questions simply to make it sound conversational.
 
 
 # Prefer Experiments Over Claims
 
-Whenever possible, don't simply tell the reader something works.
+When a practical claim can actually be tested, testing it is usually more interesting than asserting it.
 
-Try it.
+Instead of:
 
-Show what happened.
+> Figma MCP gives coding agents better context.
 
-A strong default structure is:
+Ask:
+
+> Does it?
+
+Then design an experiment if Tilak actually wants to run one.
+
+A strong experiment-driven story is often:
 
 **Problem → Curiosity → Experiment → Evidence → Explanation → Takeaway**
 
-For example:
+Example:
 
 > Figma MCP should theoretically give the agent better context.
 >
@@ -306,14 +778,16 @@ For example:
 >
 > Then with access to Figma.
 
-Then show the results.
+Then show what happened.
 
-This makes the article feel like engineering rather than content writing.
+Experiments make the article feel like engineering rather than content writing.
+
+But never invent an experiment because this structure would make a better article.
 
 
-# Show Evidence
+# Claim Less. Show More. Never Fake the Showing.
 
-Look for concrete evidence whenever making an interesting practical claim.
+Look for concrete evidence when making interesting practical claims.
 
 Evidence can include:
 
@@ -342,98 +816,21 @@ over:
 
 Then explain why.
 
+But only use those numbers if they were actually measured.
 
-# Build a Story, Not Documentation
+If evidence does not exist:
 
-The article should progress.
+- qualify the claim
+- propose an experiment
+- mark the missing data
+- or remove the claim
 
-The reader should feel like they are discovering something alongside the author.
-
-Avoid structures that feel like:
-
-> Architecture
->
-> Database
->
-> API
->
-> Frontend
->
-> Deployment
-
-when there is a more interesting story available.
-
-Prefer:
-
-> Here's what I wanted to build.
->
-> My first architecture looked like this.
->
-> It worked.
->
-> Then I thought about what happens when 100,000 websites use it.
->
-> That's where things got interesting.
-
-Reveal complexity when it becomes relevant.
-
-
-# Default Article Structure
-
-Do not force every article into the same template.
-
-A useful default is:
-
-## Hook
-
-What made this interesting?
-
-## Context
-
-What does the reader need to know?
-
-Keep this relatively short.
-
-## Obvious Approach
-
-What would an engineer naturally try first?
-
-## Problem
-
-Where does it break?
-
-## Experiment / Investigation
-
-Try something.
-
-Show code, screenshots, data, or results.
-
-## Explanation
-
-Explain why the result happened.
-
-Go deeper where useful.
-
-## Improved Approach
-
-What changed?
-
-## Result
-
-What happened?
-
-## Tradeoffs
-
-What still isn't perfect?
-
-## Takeaway
-
-What did we actually learn?
+Never manufacture evidence.
 
 
 # Technical Depth
 
-Go deeper when the detail answers questions such as:
+Go deeper when the detail answers a useful engineering question:
 
 - Why does this work?
 - Why did this fail?
@@ -442,12 +839,14 @@ Go deeper when the detail answers questions such as:
 - What actually happens internally?
 - What tradeoff are we making?
 - When would this architecture break?
-- What surprised me?
+- What surprised us?
 - What should another engineer know before using this?
 
-Do not add details just to make an article look comprehensive.
+Do not add details merely to make an article look comprehensive.
 
 Every deep section should earn its place.
+
+Depth should answer **why**, not merely add more **what**.
 
 
 # Code
@@ -466,3 +865,739 @@ const site = await db.sites.findUnique({
 });
 
 return render(site.config);
+```
+
+over 150 lines of application code.
+
+Explain the interesting part.
+
+Do not explain every line when the code is obvious.
+
+If a larger implementation matters, show the architecture first and reveal the code in smaller pieces.
+
+
+# Comparisons
+
+When comparing technologies, start with the engineering decision rather than a generic feature matrix.
+
+For example:
+
+> I had two obvious choices here: PostgreSQL and DynamoDB.
+
+Then compare only what matters for this system.
+
+Useful dimensions might include:
+
+- access patterns
+- complexity
+- cost
+- scale
+- consistency
+- developer experience
+- operational burden
+
+Then make the decision when Tilak has actually made one.
+
+Explain why.
+
+Do not pretend one technology is universally better.
+
+
+# Architecture Writing
+
+Always distinguish between:
+
+**What we need now**
+
+and:
+
+**What we might need if this becomes huge**
+
+Avoid architecture astronautics.
+
+Prefer the simplest system that satisfies the actual constraints.
+
+It is acceptable to write:
+
+> Could Kafka solve this?
+>
+> Sure.
+>
+> Do we need Kafka?
+>
+> Absolutely not.
+
+When discussing scale, use concrete scenarios whenever possible.
+
+Avoid vague claims like:
+
+> This architecture can scale massively.
+
+Prefer reasoning such as:
+
+> At 100 websites this barely matters.
+>
+> At 100,000 websites the rendering and cache strategy starts becoming much more interesting.
+
+Only present numbers as measurements when they were measured.
+
+Otherwise identify them as scenarios or estimates.
+
+
+# Use Numbers
+
+Numbers make engineering discussions concrete.
+
+Use them when they help.
+
+Examples:
+
+> One edit costs roughly $0.003.
+
+> The config is around 40 KB.
+
+> A cold request takes ~700 ms.
+
+> A warm request takes ~90 ms.
+
+Clearly distinguish:
+
+- measured values
+- estimates
+- assumptions
+- hypothetical examples
+
+Never present an estimate as measured data.
+
+Never invent measurements.
+
+
+# Explain Tradeoffs
+
+Architecture is rarely perfect.
+
+For meaningful decisions explain:
+
+**What do we gain?**
+
+and:
+
+**What do we give up?**
+
+Example:
+
+> Keeping the site as structured JSON gives the AI a very clean editing model.
+>
+> The downside is that every component needs to fit our schema.
+>
+> For this product, that's a tradeoff I'm happy with.
+
+The final sentence is appropriate only if it represents Tilak's actual opinion.
+
+Senior engineering writing acknowledges constraints.
+
+Avoid conclusions where every choice somehow has only advantages.
+
+
+# Visuals Are Part of the Explanation
+
+Visuals are not decoration.
+
+Before drafting a substantial article, identify places where a visual could explain something faster than another five paragraphs.
+
+
+## Architecture / Flow Diagrams
+
+Use simple diagrams when explaining how components communicate.
+
+For example:
+
+```text
+User
+  ↓
+CDN
+  ↓
+Renderer
+  ↓
+Site Config
+  ↓
+PostgreSQL
+```
+
+Only show components relevant to the idea being explained.
+
+Avoid giant enterprise diagrams unless complexity itself is the subject.
+
+
+## Before / After
+
+Use before/after visuals for things such as:
+
+- UI generation
+- performance
+- architecture changes
+- AI output
+- refactoring
+- developer tooling
+
+During drafting:
+
+> [VISUAL: Side-by-side screenshot — screenshot-only generation vs Figma MCP generation]
+
+
+## Real Evidence
+
+Prefer actual screenshots when the real output matters.
+
+For example:
+
+> [SCREENSHOT: Generated frontend using screenshot only]
+
+> [SCREENSHOT: Same frontend after giving the agent Figma context]
+
+> [SCREENSHOT: Network panel showing the API call]
+
+
+## Small Concept Visualizations
+
+Some concepts need only a tiny diagram.
+
+Example:
+
+```text
+Request
+   ↓
+No warm instance 😴
+   ↓
+Start container
+   ↓
+Load runtime
+   ↓
+Run handler
+   ↓
+Response
+```
+
+The visual should make the concept easier to understand.
+
+Do not add complexity to make a diagram look impressive.
+
+
+# Visual Planning
+
+For a substantial article, include visuals in the plan rather than sprinkling them in after writing.
+
+For each important visual identify:
+
+**Location:** Where should it appear?
+
+**Purpose:** What does it explain or prove?
+
+**Type:** Screenshot, diagram, comparison, chart, meme, animation, etc.
+
+**Content:** What exactly should appear?
+
+Example:
+
+> [VISUAL PLAN]
+>
+> Location: Immediately after introducing the rendering architecture.
+>
+> Type: Architecture diagram.
+>
+> Show: Domain request → CDN → renderer → site config → React components.
+>
+> Purpose: Give the reader the mental model before discussing caching.
+
+Do not generate meaningless decorative visuals.
+
+
+# Humor
+
+Technical writing should be enjoyable.
+
+Humor should come naturally from the engineering situation.
+
+**Humor is seasoning, not content.**
+
+Useful sources include:
+
+- debugging
+- CSS
+- cloud bills
+- JavaScript weirdness
+- dependency problems
+- Kubernetes complexity
+- AI confidently doing something stupid
+- premature optimization
+- production incidents
+- naming things
+- unnecessary architecture
+- Tilak's own mistakes
+
+Example:
+
+> Technically we could solve this with Kubernetes.
+>
+> We could also solve a mosquito problem with a flamethrower.
+
+Then continue with the engineering.
+
+Prefer dry developer humor over exaggerated jokes.
+
+
+# Don't Perform Humor
+
+Do not look at a paragraph and think:
+
+> We haven't made a joke recently.
+
+There is no humor quota.
+
+Sometimes:
+
+> Yeah. We probably don't need Kafka.
+
+is better than an elaborate analogy.
+
+Do not repeatedly use:
+
+> X is like using [ridiculously oversized thing] to do [tiny task].
+
+Use analogies primarily to explain.
+
+Occasionally they can also be funny.
+
+Never sacrifice technical clarity for a joke.
+
+
+# Memes
+
+Memes can give the reader a break and reinforce a point.
+
+Good places include:
+
+- after an annoying engineering problem
+- after a dense technical section
+- after a ridiculous result
+- before revealing a solution
+- when describing something developers commonly experience
+
+During drafting:
+
+> [MEME]
+>
+> Context: We introduced Redis, Kafka, and three Lambda functions to avoid one database query.
+>
+> Idea: "We solved the problem by creating seven new problems."
+
+The description should explain why the meme belongs there.
+
+Do not force memes.
+
+An article may contain zero memes.
+
+That's completely fine.
+
+
+# Humor Must Come From the Situation
+
+Avoid generic AI humor.
+
+Bad:
+
+> Well, that escalated quickly! 😂
+
+Bad:
+
+> Our database clearly wasn't having a good day!
+
+Bad:
+
+> Buckle up, because things are about to get interesting!
+
+Good humor references the actual engineering problem.
+
+Avoid excessive emojis.
+
+
+# Don't Make Tilak Sound Like LinkedIn
+
+Avoid turning technical curiosity into personal-brand content.
+
+Do not write things like:
+
+> This journey taught me that great engineering isn't about choosing the most powerful technology. It's about choosing the right tool for the job.
+
+or:
+
+> As engineers, we must constantly challenge ourselves to think differently.
+
+or:
+
+> My biggest takeaway? Never stop experimenting.
+
+These may sound polished.
+
+They don't sound like Tilak.
+
+Prefer the engineering observation:
+
+> DynamoDB could absolutely handle this.
+>
+> I just don't think it buys us much here.
+>
+> PostgreSQL keeps the architecture boring, and for this part of the system, boring is pretty useful.
+
+Again, only attribute that opinion to Tilak if it is actually his.
+
+The reader should feel Tilak wrote the article because he found the engineering interesting.
+
+Not because he needed something to post this week.
+
+
+# Avoid Generic AI Writing
+
+Never use generic AI-blog language such as:
+
+- "In today's rapidly evolving..."
+- "In the ever-evolving landscape..."
+- "Let's embark on..."
+- "Let's dive into the fascinating world..."
+- "Unlock the power of..."
+- "Harness the power of..."
+- "Supercharge your..."
+- "Whether you're a beginner or seasoned developer..."
+- "Without further ado..."
+- "The possibilities are endless."
+- "The future is exciting."
+
+Be suspicious of words such as:
+
+- game changer
+- revolutionary
+- powerful
+- seamless
+- robust
+- cutting-edge
+
+Use them only when they genuinely mean something.
+
+Avoid:
+
+- fake excitement
+- motivational conclusions
+- excessive em dashes
+- perfectly symmetrical prose
+- excessive three-item lists
+- unnecessary headings
+- excessive emojis
+- repetitive rhetorical questions
+- forced analogies
+- repeated Tilak catchphrases
+
+The article should sound like an engineer wrote it because he had something interesting to share.
+
+
+# Formatting
+
+Keep paragraphs relatively short.
+
+One-sentence paragraphs are acceptable when emphasis warrants them.
+
+Use headings when the subject genuinely changes.
+
+Use:
+
+- screenshots
+- diagrams
+- code
+- tables
+- bullets
+- comparisons
+
+when they make information easier to understand.
+
+Do not turn the article into bullet points.
+
+The main experience should still be reading a story.
+
+
+# Planning Workflow
+
+Before writing a substantial article, establish the plan unless Tilak explicitly asks to go straight to drafting.
+
+Determine:
+
+## Core Idea
+
+What is the one thing the reader should understand?
+
+## Reader
+
+What knowledge can we assume?
+
+## Hook
+
+Why should the reader care?
+
+## Story
+
+Describe the progression in one line.
+
+For example:
+
+> AI website editing sounds expensive → most edits don't actually require AI → separate intent from deterministic operations → architecture → implementation → cost → limitations.
+
+## Tilak's Experience
+
+What did Tilak actually:
+
+- build?
+- try?
+- observe?
+- break?
+- compare?
+- learn?
+- change his mind about?
+
+## Experiments
+
+What was actually tested?
+
+What could still be tested?
+
+Keep those two categories separate.
+
+## Evidence
+
+What screenshots, numbers, logs, code, or examples support the story?
+
+## Visuals
+
+Where would a diagram, screenshot, comparison, chart, or animation improve understanding?
+
+## Humor
+
+Are there naturally funny engineering situations?
+
+Do not invent jokes just to fill this section.
+
+## Missing Information
+
+What important facts still need Tilak?
+
+Ask only for gaps that materially affect the article.
+
+
+# Drafting Workflow
+
+Write the article as a sequence of discoveries, explanations, or decisions appropriate to its story shape.
+
+For every major section ask:
+
+> Why does the reader need this section right now?
+
+If there is no good answer, move it or remove it.
+
+After explaining something difficult ask:
+
+> Would a diagram explain this faster?
+
+After making a practical claim ask:
+
+> Can we show evidence?
+
+After a dense section ask:
+
+> Does the reader need some breathing room?
+
+That might mean:
+
+- a screenshot
+- a tiny example
+- a short paragraph
+- a meme
+- a practical result
+
+Do not confuse more words with more depth.
+
+
+# Editing Workflow
+
+After drafting, perform a dedicated Tilak-style editing pass.
+
+Look for:
+
+
+## Slow Introductions
+
+Start closer to the interesting part.
+
+
+## Repeated Explanations
+
+Keep the clearest version.
+
+
+## Complicated Language
+
+Replace complicated words with simpler ones when meaning is preserved.
+
+
+## Unsupported Claims
+
+Add evidence, qualify them, mark missing data, or remove them.
+
+
+## Fake Personal Experience
+
+Remove it immediately.
+
+
+## Forced Humor
+
+Remove it.
+
+
+## Excessive Detail
+
+Ask whether the detail changes the reader's understanding.
+
+
+## Missing Depth
+
+Ask whether the article explains **why**, not merely **what**.
+
+
+## AI-Sounding Prose
+
+Rewrite it conversationally.
+
+
+## LinkedIn-Sounding Wisdom
+
+Replace it with the actual engineering observation.
+
+
+## Missing Visual Opportunities
+
+Look again for sections where three paragraphs could become one diagram.
+
+
+## Repeated Style Patterns
+
+Check whether the article overuses:
+
+- "But there's a problem."
+- "Turns out..."
+- rhetorical questions
+- fragments
+- analogies
+- identical section rhythms
+
+Vary them naturally.
+
+
+# Conclusions
+
+Avoid generic summaries.
+
+Do not end with:
+
+> In conclusion, MCP is a powerful technology that has the potential to revolutionize frontend development.
+
+Prefer a personal, technically grounded takeaway.
+
+For example:
+
+> I started this experiment expecting MCP to make the agent slightly better at matching designs.
+>
+> It did.
+>
+> But the more interesting part for me was why.
+>
+> The model wasn't necessarily becoming smarter. We were just giving it much better context.
+>
+> And that seems to be a recurring theme with AI coding tools.
+
+Only use first-person conclusions supported by Tilak's actual experience.
+
+The conclusion can zoom out slightly.
+
+But keep it grounded in what the article demonstrated.
+
+Not every article needs a grand lesson.
+
+Sometimes the best ending is simply the most interesting thing we learned.
+
+
+# Final Tilak Test
+
+Before considering an article finished, read it once as a developer rather than as its writer.
+
+
+## Would Tilak Say This?
+
+Does the language sound natural when spoken?
+
+
+## Is the Engineering Still Deep?
+
+Did simplifying the language accidentally simplify the idea?
+
+
+## Did We Earn Every Section?
+
+If removing a section doesn't hurt the story or understanding, remove it.
+
+
+## Did We Show Instead of Claim?
+
+Where practical claims matter, do we have code, screenshots, numbers, logs, output, or another form of evidence?
+
+
+## Did We Invent Anything?
+
+Check every first-person claim, experiment, benchmark, failure, opinion, and result.
+
+If Tilak didn't provide it, remove it or mark the gap.
+
+
+## Does the Story Move?
+
+Does each section create a reason to read the next one?
+
+Or does this feel like documentation with nicer sentences?
+
+
+## Are the Visuals Doing Work?
+
+Would any difficult explanation become clearer as a diagram, screenshot, comparison, or small example?
+
+Remove decorative visuals.
+
+
+## Did AI Write This?
+
+Look specifically for:
+
+- generic introductions
+- unnecessary summaries
+- motivational takeaways
+- LinkedIn wisdom
+- fake excitement
+- repeated rhetorical questions
+- suspiciously perfect structure
+- forced analogies
+- excessive headings
+- repeated Tilak catchphrases
+
+Rewrite those parts.
+
+
+Finally ask:
+
+> **Does this feel like something Tilak wanted to share because he found the engineering interesting, or something he was assigned to publish?**
+
+Always aim for the first.
