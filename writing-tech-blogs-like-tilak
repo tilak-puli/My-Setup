@@ -1,0 +1,468 @@
+---
+name: writing-tech-blogs-like-tilak
+description: Use when planning, writing, editing, or reviewing technical blog posts, engineering articles, architecture explainers, developer experiments, or experience-based software engineering posts for Tilak.
+---
+
+# Writing Tilak's Technical Blogs
+
+## Overview
+
+Write technical articles in Tilak's personal engineering voice.
+
+The goal is not to sound like documentation, a textbook, a corporate engineering blog, an SEO article, or generic AI-generated content.
+
+The writing should feel like:
+
+> A senior engineer discovered, built, tested, or understood something interesting and is explaining it to another engineer over coffee.
+
+The reader should finish thinking:
+
+- I actually understand this.
+- That was easier to read than I expected.
+- I learned something useful.
+- That was surprisingly fun to read.
+
+The fundamental rule:
+
+**Simplify the explanation, not the engineering.**
+
+Technical depth is welcome. Complicated language is not.
+
+
+# Reference Writing Samples
+
+Before writing or substantially editing a blog for Tilak, use his published writing as a style reference when accessible.
+
+## Medium
+
+Profile:
+
+https://tilakpuli.medium.com/
+
+Reference articles:
+
+### Powerup Frontend Vibe Coding with MCP Tools
+
+https://tilakpuli.medium.com/powerup-frontend-vibe-coding-with-mcp-tools-b2a034dd88cd
+
+Useful reference for:
+
+- experiment-driven writing
+- AI/developer tooling topics
+- before/after comparisons
+- screenshots as evidence
+- developer humor
+- practical conclusions
+
+### Unlocking Android Security: Harnessing Android Hardware Keystore and Biometric Lock
+
+https://tilakpuli.medium.com/unlocking-android-security-harnessing-android-hardware-keystore-and-biometric-lock-c91bad4a29a9
+
+Useful reference for:
+
+- explaining complex technical concepts simply
+- security topics
+- going deeper technically without becoming academic
+- code examples
+- implementation-focused explanations
+
+When accessible, read relevant reference articles before drafting.
+
+Do not copy their sentences.
+
+Study:
+
+- sentence length
+- rhythm
+- vocabulary
+- technical depth
+- explanation style
+- section transitions
+- openings
+- first-person experience
+- experiments
+- code usage
+- screenshots
+- visuals
+- humor
+- conclusions
+
+The rules in this skill describe the intended direction of Tilak's future writing.
+
+The existing articles show his natural voice.
+
+Neither should be followed mechanically.
+
+**Preserve the voice. Improve the writing.**
+
+
+# Style Evolution
+
+Newer articles generally carry more weight than older articles when determining Tilak's current style.
+
+Older articles are useful for identifying characteristics that consistently appear in his writing.
+
+Future articles should preserve:
+
+- simple English
+- conversational explanations
+- technical depth
+- practical engineering
+- curiosity
+- experiments
+- visual explanations
+- personal experience
+- developer humor
+
+Future articles should improve:
+
+- structure
+- storytelling
+- grammar
+- transitions
+- technical precision
+- visual consistency
+- evidence
+
+Do not reproduce awkward grammar or structural problems merely because they appear in an older article.
+
+
+# Voice
+
+Use simple, conversational English.
+
+Write like an engineer talking to another engineer.
+
+Prefer:
+
+> So what actually happens when we do this?
+
+over:
+
+> It is therefore important to understand the underlying mechanisms involved in this process.
+
+Prefer:
+
+> Let's try it.
+
+over:
+
+> In order to evaluate this approach, we conducted an experiment.
+
+Prefer:
+
+> This works. But there's a problem.
+
+over:
+
+> While this approach provides the desired functionality, it introduces several potential disadvantages.
+
+It is okay to use:
+
+- I
+- we
+- you
+- "Let's..."
+- "Okay..."
+- "Basically..."
+- "Turns out..."
+- "Here's the interesting part."
+- "There's one problem though."
+- "So why does this matter?"
+- "Now let's actually try it."
+
+Do not over-polish every sentence.
+
+Short sentences are useful.
+
+Fragments are occasionally useful.
+
+For example:
+
+> Great. We have the data.
+>
+> But now we have another problem.
+
+The writing should sound spoken and natural without becoming sloppy.
+
+
+# Simple English, Deep Engineering
+
+Simple writing does not mean shallow content.
+
+Never remove important technical details merely because they are complicated.
+
+Instead, make complicated things easier to understand.
+
+Prefer:
+
+**intuition → terminology → details**
+
+Instead of:
+
+**terminology → definition → more terminology**
+
+For example, don't begin with:
+
+> PostgreSQL uses Multi-Version Concurrency Control.
+
+Start with the idea:
+
+> PostgreSQL doesn't normally overwrite a row immediately when you update it.
+>
+> It creates another version.
+>
+> That sounds wasteful, but another transaction might still be reading the old one.
+>
+> This is basically what MVCC — Multi-Version Concurrency Control — allows PostgreSQL to handle.
+
+Explain the idea first.
+
+Give it a name second.
+
+
+# Assume the Reader Is Smart
+
+The typical reader is another developer.
+
+Do not explain basic software concepts unless the article requires it.
+
+The reader probably understands:
+
+- APIs
+- frontend/backend
+- HTTP
+- JSON
+- databases
+- servers
+- requests/responses
+- Git
+- cloud
+- JavaScript
+
+They may not understand the specific technology or architecture being discussed.
+
+Explain the interesting part.
+
+Don't turn every article into Programming 101.
+
+
+# Start With Something Interesting
+
+Avoid long introductions.
+
+Get to the reason the article exists quickly.
+
+Good openings generally start with one of four things.
+
+## A Problem
+
+> I've been building an AI website builder recently.
+>
+> And I ran into a slightly stupid problem.
+>
+> Changing `padding: 16px` to `padding: 20px` shouldn't require an LLM.
+
+## A Question
+
+> MCP sounds useful.
+>
+> But does giving an AI coding agent access to Figma actually make the generated frontend better?
+
+## An Observation
+
+> Serverless is incredibly cheap when nobody is using your application.
+>
+> Unfortunately, users occasionally insist on using your application.
+
+## Something Tilak Tried
+
+> I wanted to see how far I could push this architecture before I needed a traditional backend.
+
+Give the reader a reason to continue within the first few paragraphs.
+
+
+# Prefer Experiments Over Claims
+
+Whenever possible, don't simply tell the reader something works.
+
+Try it.
+
+Show what happened.
+
+A strong default structure is:
+
+**Problem → Curiosity → Experiment → Evidence → Explanation → Takeaway**
+
+For example:
+
+> Figma MCP should theoretically give the agent better context.
+>
+> But "theoretically" isn't very interesting.
+>
+> So I gave the agent the same screen twice.
+>
+> First with only a screenshot.
+>
+> Then with access to Figma.
+
+Then show the results.
+
+This makes the article feel like engineering rather than content writing.
+
+
+# Show Evidence
+
+Look for concrete evidence whenever making an interesting practical claim.
+
+Evidence can include:
+
+- screenshots
+- actual UI output
+- logs
+- benchmark results
+- network requests
+- database queries
+- architecture diagrams
+- code
+- latency
+- cost
+- before/after comparisons
+- generated output
+
+Prefer:
+
+> Without caching: ~840 ms
+>
+> With caching: ~120 ms
+
+over:
+
+> Caching significantly improved performance.
+
+Then explain why.
+
+
+# Build a Story, Not Documentation
+
+The article should progress.
+
+The reader should feel like they are discovering something alongside the author.
+
+Avoid structures that feel like:
+
+> Architecture
+>
+> Database
+>
+> API
+>
+> Frontend
+>
+> Deployment
+
+when there is a more interesting story available.
+
+Prefer:
+
+> Here's what I wanted to build.
+>
+> My first architecture looked like this.
+>
+> It worked.
+>
+> Then I thought about what happens when 100,000 websites use it.
+>
+> That's where things got interesting.
+
+Reveal complexity when it becomes relevant.
+
+
+# Default Article Structure
+
+Do not force every article into the same template.
+
+A useful default is:
+
+## Hook
+
+What made this interesting?
+
+## Context
+
+What does the reader need to know?
+
+Keep this relatively short.
+
+## Obvious Approach
+
+What would an engineer naturally try first?
+
+## Problem
+
+Where does it break?
+
+## Experiment / Investigation
+
+Try something.
+
+Show code, screenshots, data, or results.
+
+## Explanation
+
+Explain why the result happened.
+
+Go deeper where useful.
+
+## Improved Approach
+
+What changed?
+
+## Result
+
+What happened?
+
+## Tradeoffs
+
+What still isn't perfect?
+
+## Takeaway
+
+What did we actually learn?
+
+
+# Technical Depth
+
+Go deeper when the detail answers questions such as:
+
+- Why does this work?
+- Why did this fail?
+- Why is this faster?
+- Why is this cheaper?
+- What actually happens internally?
+- What tradeoff are we making?
+- When would this architecture break?
+- What surprised me?
+- What should another engineer know before using this?
+
+Do not add details just to make an article look comprehensive.
+
+Every deep section should earn its place.
+
+
+# Code
+
+Use code when seeing the implementation improves understanding.
+
+Do not dump entire files.
+
+Show the smallest useful piece.
+
+Prefer:
+
+```typescript
+const site = await db.sites.findUnique({
+  where: { domain }
+});
+
+return render(site.config);
